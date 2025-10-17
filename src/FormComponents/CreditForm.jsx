@@ -200,7 +200,7 @@ export function CreditForm() {
 
     const message= generateEmailHTML(form)
     try{
-      fetch('http://127.0.0.1:5000/sendEmail',{
+      fetch('https://backend-server-alpha-seven.vercel.app/sendEmail',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
